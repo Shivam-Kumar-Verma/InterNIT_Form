@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form Inter-NIT Sports Meet 2024</title>
+    <style>
+        .container {
+            width: 60%;
+            margin: auto;
+            background:rgb(217, 103, 122);
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(128, 16, 16, 0.1);
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+        *{
+            margin: 10px;
+            padding:5px;
+        }
+        h1 {
+            min-height: 10px;
+            color: blue;
+            background-color:orchid;
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        h3 {
+            color: brown;
+            background-color: rgb(147, 214, 13);
+            font-size: 25px;
+            border-color: blueviolet;
+            text-align: center;
+        }
+        h5 {
+            font-style: oblique;
+            font-size: x-large;
+            color: rgb(8, 60, 157);
+            margin:0px;
+
+        }
+        input[type="text"], input[type="email"], input[type="date"], input[type="tel"], select, textarea {
+            width: 38%;
+            padding: 5px;
+            margin: 5px 0 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        label {
+            font-weight: bold;
+            display: inline;
+            margin: 20px 0 5px;
+        }
+        input[type="submit"] {
+            width: 40%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+        input[type="submit"]:hover {
+            background-color: #16e920;
+        }
+        input[type="reset"] {
+            width: 40%;
+            background-color: #564caf;
+            color: white;
+            padding: 14px 20px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+        input[type="reset"]:hover {
+            background-color: #9742e1;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+    <header>
+        <img src="DALL·E 2024-09-01 12.05.05 - Create a logo for 'Inter-NIT 2024 Sports' hosted by NIT Manipur. The logo should include modern design elements with bold and dynamic colors like blue.webp" height="500" width="800" >
+        <nav>
+            <h1> Inter-NIT Sports Meet-2024 Registration</h1>
+            <form action="submit_registration.php" method="post">
+            <h3> (Conducted by:- NITMN) </h3>
+        
+            <label for="101">Full Name:-</label>
+            <input type="text" id="101" name="name" autofocus required>
+        </br>
+            
+            <label for="102">Email id:- </label>
+            <input type="email" id="102" name="email id" autofocus required>
+         </br>
+            <label for="103">Contact No:-</label>
+            <input type="tel" id="103" name="contact no" autofocus required>
+        </br>
+        <label for="104">DoB:-</label>
+        <input type="date" id="104" name="dob"autofocus required>
+        <label for="105">Gender:-</label>
+        <select name="gender" id="105" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select>
+    </br>
+        <label for="106">Institute Name/NIT:-</label>
+        <input type="text" id="106"name="college"autofocus required>
+</br>
+<h5> Select your year</h5>
+<label for="107">Year</label>
+<select name="year" id="107" required>
+    <option value="year">1st Year</option>
+    <option value="year">2nd Year</option>
+    <option value="year">3rd Year</option>
+    <option value="year">4th Year</option>
+</select>
+</br>
+<h5>Branch/Department</h5>
+<label for="108">Branch</label>
+<input type="text" id="108" required>
+</header>
+</br>
+<main>
+<h5>Select the sports in which you are intrested of(*more than one)</h5>
+<label for="cricket">
+    <input type="checkbox" value="cricket" id="cricket" name="cricket">Cricket
+</label>
+</br>
+<label for="volleyball">
+    <input type="checkbox" value="volleyball" id="volleyball" name="volleyball">Volleyball
+</label>
+</br>
+<label for="kabbadi">
+    <input type="checkbox" value="kabbadi" id="kabbadi" name="kabbadi">Kabbadi
+</label>
+</br>
+<label for="kho-kho">
+    <input type="checkbox" value="kho-kho" id="kho-kho" name="volleyball">Kho-Kho
+</label>
+</br>
+<label for="table_tennis">
+    <input type="checkbox" value="table_tennis" id="table_tennis" name="table_tennis">Table_tennis
+</label>
+</br>
+<label for="badminton">
+    <input type="checkbox" value="badminton" id="badminton" name="badminton">Badminton
+</label>
+</br>
+<label for="chess">
+    <input type="checkbox" value="chess" id="" name="chess">Chess
+</label>
+</br>
+<label for="basketball">
+    <input type="checkbox" value="basketball" id="basketball" name="basketball">Basketball
+</label>
+</br>
+<label for="athletics">
+    <input type="checkbox" value="athletics" id="athletics" name="athletics">Athletics
+</label>
+</br>
+<label for="football">
+    <input type="checkbox" value="football" id="football" name="football">Football
+</label>
+</main>
+</br>
+</footer>
+
+<label for="experience">Experience in the selected sports:</label>
+<input type="text" id="experience" placeholder="write your experience here.." required rows="4" column="2">
+</br>
+<h5>Mention any significant achievements:</h5>
+<label for="achievements"></label>
+<textarea id="achievements" name="achievements" rows="4" column="2" placeholder="Mention any significant achievements..."></textarea>
+</br>
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
+</footer>
+</nav>
+    <script src="script.js"></script>
+    </form>
+    </div>
+</body>
+</html>
